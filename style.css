@@ -145,3 +145,130 @@ body {
 }
 
 /* HEADER end */
+
+/* MAIN start */
+main {
+  font-family: Roboto;
+  color: #222222;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  line-height: 1.5;
+
+  background-image: linear-gradient(rgb(250, 255, 229), rgb(235, 235, 138));
+}
+
+/* MAIN end */
+
+/* MAIN TEXT start */
+.main-text {
+  font-weight: 800;
+
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+  flex: 1 1 auto;
+
+  padding: 8em 1em 0em 1em;
+}
+
+.emphasis {
+  font-style: italic;
+}
+/* MAIN TEXT end */
+
+/* FORM start */
+
+.main-form {
+  flex: 1 1 auto;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2em;
+}
+
+.form-modal {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  padding: 2em;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5em;
+}
+
+.form-row {
+  display: flex;
+  flex-flow: row;
+  gap: 4em;
+}
+
+.form-card {
+  display: flex;
+  flex-flow: column;
+}
+
+label {
+  color: #444444;
+  font-weight: 500;
+  font-size: x-small;
+}
+
+.button-card {
+  padding-left: 2em;
+
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.button-card a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.button-card a:hover {
+  text-decoration: underline;
+}
+
+.soft-shadow-btn {
+  align-self: start;
+  padding: 10px 20px;
+  background-color: rgb(
+    158,
+    158,
+    2
+  ); /* Button background should contrast slightly with the page background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners make the shadow look more natural */
+  cursor: pointer;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.2s ease; /* Smooth transition for hover effects */
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    /* Main soft shadow */ 0 2px 4px rgba(0, 0, 0, 0.06); /* Subtle secondary shadow */
+}
+
+.soft-shadow-btn:hover {
+  /* Slightly more pronounced shadow on hover to simulate the button lifting */
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.15),
+    0 3px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px); /* Optional: lifts the button slightly */
+}
+
+.soft-shadow-btn:active {
+  /* Reduces the shadow and pushes the button down when clicked */
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.05);
+  transform: translateY(1px);
+}
+
+/* FORM end */

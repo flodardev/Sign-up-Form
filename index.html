@@ -29,14 +29,68 @@
       </p>
     </div>
     <main>
-      <div>
+      <div class="main-text">
         <p>
-          "Experience the soul of Sabah, reimagined. We blend the ancient
-          flavors of Borneo—zesty Hinava, wild Bambangan, and fresh seafood—with
+          Experience the soul of Sabah, reimagined. We blend the ancient flavors
+          of Borneo—zesty Hinava, wild Bambangan, and fresh seafood—with
           contemporary culinary artistry. Join our exclusive list to reserve
-          your seat at the table where heritage meets the avant-garde."
+          your seat at the table where heritage meets the avant-garde.
         </p>
-        <p></p>
+        <p>You are about to be <span class="emphasis">delighted.</span></p>
+      </div>
+      <div class="main-form">
+        <form class="form-container" action="#" method="get">
+          <div class="form-modal">
+            <h3>Sign up here!</h3>
+            <div class="form-row">
+              <div class="form-card">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="form-card">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-card">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-card">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" name="phone-number" id="phone-number" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-card">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="form-card">
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="password-confirm"
+                  id="password-confirm"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="button-card">
+            <button class="soft-shadow-btn" type="submit">
+              Create Account
+            </button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
       </div>
     </main>
   </body>
