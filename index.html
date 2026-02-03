@@ -51,27 +51,53 @@
                   name="first-name"
                   required
                   autofocus
+                  placeholder="First Name"
                 />
               </div>
               <div class="form-card">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" required />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  placeholder="Last Name"
+                />
               </div>
             </div>
             <div class="form-row">
               <div class="form-card">
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="email@example.com"
+                />
               </div>
               <div class="form-card">
                 <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" name="phone-number" id="phone-number" />
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="012-3456789"
+                />
               </div>
             </div>
             <div class="form-row">
               <div class="form-card">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" required />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  placeholder="Password"
+                />
               </div>
               <div class="form-card">
                 <label for="password-confirm">CONFIRM PASSWORD</label>
@@ -80,6 +106,9 @@
                   name="password-confirm"
                   id="password-confirm"
                   required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  placeholder="Confirm password"
                 />
               </div>
             </div>
